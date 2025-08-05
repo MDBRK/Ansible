@@ -1,0 +1,11 @@
+
+###################################################################################################################
+
+instead of doing the command 
+
+ansible all --key-file ~/.ssh/ansible -i inventory -m "ping"
+
+
+we can do a config file called    ansible.cfg  (check the actual ansible.cfg to see examples)
+
+###################################################################################################################
