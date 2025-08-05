@@ -1,0 +1,11 @@
+check if a host or hosts are alive 
+
+ansible all -m "ping"
+
+
+
+check all informations about hosts  (proccecors/ram/OS/ip/.....)
+
+ansible all -m "gather_facts"       (for all hosts in inventory)
+
+ansible all -m "gather_facts" --limit <host ip >    (for 1 host)
