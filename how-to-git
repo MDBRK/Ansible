@@ -1,0 +1,24 @@
+how to use Git for version control 
+
+
+
+git config --globale user.name <username>
+
+git config --globale user.email <email>
+
+cat ~/.gitconfig    (to see the config file)
+
+
+vim/nano   <file> 
+
+git status 
+
+git diff <file>
+
+gitt add <file>
+
+git commit -m "message"
+
+git push origin <branch>
+
+
