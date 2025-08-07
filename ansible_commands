@@ -9,3 +9,19 @@ check all informations about hosts  (proccecors/ram/OS/ip/.....)
 ansible all -m "gather_facts"       (for all hosts in inventory)
 
 ansible all -m "gather_facts" --limit <host ip >    (for 1 host)
+
+
+*******************************************
+*  Tell ansible to use sudo = become      *
+*              				  *
+*  ask for password = --ask-become-pass   *
+*					  *
+*******************************************
+
+ansible all -m apt -a update_cache=true --become --ask-become-pass
+
+Install a package via the apt module : ansible all -m apt -a name=vim-nox --become --ask-become-pass
+
+Install a package via the apt module, and also make sure it’s the latest version available : ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+
+Upgrade all the package updates that are available : ansible all -m apt -a upgrade=dist --become --ask-become-passxx
