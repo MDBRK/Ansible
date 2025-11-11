@@ -11,6 +11,3 @@ This repository contains all my **Ansible** scripts, playbooks, and tips as I le
 
 
 ---
-
-
-Happy automating! 
